@@ -9,9 +9,9 @@
 
   CITY hash calculation - defines
 
-  Version 2.0 (2021-03-13)
+  Version 2.1 (2021-09-16)
 
-  Last change 2021-03-13
+  Last change 2021-09-16
 
   ©2016-2021 František Milt
 
@@ -43,8 +43,18 @@
   Also, it might be needed by BitOps library, see there for details.
 
 ===============================================================================}
+{
+  CityHash_PurePascal
 
-// do not change following lines
+  If you want to compile this library without ASM, don't want to or cannot
+  define PurePascal for the entire project and at the same time you don't want
+  to or cannot make changes to this library, define this symbol for the entire
+  project and this library will be compiled in PurePascal mode.
+}
+{$IFDEF CityHash_PurePascal}
+  {$DEFINE PurePascal}
+{$ENDIF}
+
 {$IF defined(CPUX86_64) or defined(CPUX64)}
   {$DEFINE x64}
 {$ELSEIF defined(CPU386)}

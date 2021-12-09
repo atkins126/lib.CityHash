@@ -11,9 +11,9 @@
 
     Implementation of CITY hash version 1.0.3.
 
-  Version 2.0 (2021-03-13)
+  Version 2.1 (2021-09-16)
 
-  Last change 2021-03-13
+  Last change 2021-09-16
 
   ©2016-2021 František Milt
 
